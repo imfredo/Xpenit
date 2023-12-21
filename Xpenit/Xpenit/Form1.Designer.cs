@@ -37,8 +37,10 @@
             label2 = new Label();
             label3 = new Label();
             dateTimePicker1 = new DateTimePicker();
+            dataGridView1 = new DataGridView();
             tabControl1.SuspendLayout();
             tab1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -56,6 +58,7 @@
             // 
             // tab1
             // 
+            tab1.Controls.Add(dataGridView1);
             tab1.Controls.Add(label3);
             tab1.Controls.Add(label2);
             tab1.Controls.Add(label1);
@@ -131,6 +134,14 @@
             dateTimePicker1.Size = new Size(277, 23);
             dateTimePicker1.TabIndex = 1;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(251, 254);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(571, 200);
+            dataGridView1.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -143,6 +154,7 @@
             tabControl1.ResumeLayout(false);
             tab1.ResumeLayout(false);
             tab1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -157,5 +169,6 @@
         private Label label2;
         private Label label1;
         private DateTimePicker dateTimePicker1;
+        private DataGridView dataGridView1;
     }
 }
