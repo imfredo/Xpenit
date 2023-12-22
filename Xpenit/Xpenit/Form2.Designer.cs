@@ -30,17 +30,17 @@
         {
             tabControl1 = new TabControl();
             tabIngresos = new TabPage();
-            tabGastos = new TabPage();
-            lblFechaIngresos = new Label();
-            lblMontoIngresos = new Label();
-            lblCategoriaIngresos = new Label();
-            lblCuentaIngresos = new Label();
-            lblNotaIngresos = new Label();
-            txtFecha = new TextBox();
-            txtMonto = new TextBox();
-            txtCategoria = new TextBox();
-            txtCuenta = new TextBox();
             txtNota = new TextBox();
+            txtCuenta = new TextBox();
+            txtCategoria = new TextBox();
+            txtMonto = new TextBox();
+            txtFecha = new TextBox();
+            lblNotaIngresos = new Label();
+            lblCuentaIngresos = new Label();
+            lblCategoriaIngresos = new Label();
+            lblMontoIngresos = new Label();
+            lblFechaIngresos = new Label();
+            tabGastos = new TabPage();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -51,6 +51,9 @@
             lblCategoriaGastos = new Label();
             lblMontoGastos = new Label();
             lblFechaGastos = new Label();
+            btnGuardar = new Button();
+            btnContinuar = new Button();
+            btnSalir = new Button();
             tabControl1.SuspendLayout();
             tabIngresos.SuspendLayout();
             tabGastos.SuspendLayout();
@@ -63,11 +66,14 @@
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(427, 496);
+            tabControl1.Size = new Size(417, 353);
             tabControl1.TabIndex = 0;
             // 
             // tabIngresos
             // 
+            tabIngresos.Controls.Add(btnSalir);
+            tabIngresos.Controls.Add(btnContinuar);
+            tabIngresos.Controls.Add(btnGuardar);
             tabIngresos.Controls.Add(txtNota);
             tabIngresos.Controls.Add(txtCuenta);
             tabIngresos.Controls.Add(txtCategoria);
@@ -81,10 +87,90 @@
             tabIngresos.Location = new Point(4, 24);
             tabIngresos.Name = "tabIngresos";
             tabIngresos.Padding = new Padding(3);
-            tabIngresos.Size = new Size(419, 468);
+            tabIngresos.Size = new Size(409, 325);
             tabIngresos.TabIndex = 0;
             tabIngresos.Text = "Ingresos";
             tabIngresos.UseVisualStyleBackColor = true;
+            // 
+            // txtNota
+            // 
+            txtNota.Location = new Point(91, 215);
+            txtNota.Name = "txtNota";
+            txtNota.Size = new Size(100, 23);
+            txtNota.TabIndex = 9;
+            // 
+            // txtCuenta
+            // 
+            txtCuenta.Location = new Point(91, 167);
+            txtCuenta.Name = "txtCuenta";
+            txtCuenta.Size = new Size(100, 23);
+            txtCuenta.TabIndex = 8;
+            // 
+            // txtCategoria
+            // 
+            txtCategoria.Location = new Point(91, 124);
+            txtCategoria.Name = "txtCategoria";
+            txtCategoria.Size = new Size(100, 23);
+            txtCategoria.TabIndex = 7;
+            // 
+            // txtMonto
+            // 
+            txtMonto.Location = new Point(91, 81);
+            txtMonto.Name = "txtMonto";
+            txtMonto.Size = new Size(100, 23);
+            txtMonto.TabIndex = 6;
+            // 
+            // txtFecha
+            // 
+            txtFecha.Location = new Point(91, 34);
+            txtFecha.Name = "txtFecha";
+            txtFecha.Size = new Size(100, 23);
+            txtFecha.TabIndex = 5;
+            // 
+            // lblNotaIngresos
+            // 
+            lblNotaIngresos.AutoSize = true;
+            lblNotaIngresos.Location = new Point(15, 215);
+            lblNotaIngresos.Name = "lblNotaIngresos";
+            lblNotaIngresos.Size = new Size(33, 15);
+            lblNotaIngresos.TabIndex = 4;
+            lblNotaIngresos.Text = "Nota";
+            // 
+            // lblCuentaIngresos
+            // 
+            lblCuentaIngresos.AutoSize = true;
+            lblCuentaIngresos.Location = new Point(15, 167);
+            lblCuentaIngresos.Name = "lblCuentaIngresos";
+            lblCuentaIngresos.Size = new Size(45, 15);
+            lblCuentaIngresos.TabIndex = 3;
+            lblCuentaIngresos.Text = "Cuenta";
+            // 
+            // lblCategoriaIngresos
+            // 
+            lblCategoriaIngresos.AutoSize = true;
+            lblCategoriaIngresos.Location = new Point(15, 124);
+            lblCategoriaIngresos.Name = "lblCategoriaIngresos";
+            lblCategoriaIngresos.Size = new Size(58, 15);
+            lblCategoriaIngresos.TabIndex = 2;
+            lblCategoriaIngresos.Text = "Categoría";
+            // 
+            // lblMontoIngresos
+            // 
+            lblMontoIngresos.AutoSize = true;
+            lblMontoIngresos.Location = new Point(15, 84);
+            lblMontoIngresos.Name = "lblMontoIngresos";
+            lblMontoIngresos.Size = new Size(43, 15);
+            lblMontoIngresos.TabIndex = 1;
+            lblMontoIngresos.Text = "Monto";
+            // 
+            // lblFechaIngresos
+            // 
+            lblFechaIngresos.AutoSize = true;
+            lblFechaIngresos.Location = new Point(15, 34);
+            lblFechaIngresos.Name = "lblFechaIngresos";
+            lblFechaIngresos.Size = new Size(38, 15);
+            lblFechaIngresos.TabIndex = 0;
+            lblFechaIngresos.Text = "Fecha";
             // 
             // tabGastos
             // 
@@ -101,90 +187,10 @@
             tabGastos.Location = new Point(4, 24);
             tabGastos.Name = "tabGastos";
             tabGastos.Padding = new Padding(3);
-            tabGastos.Size = new Size(419, 468);
+            tabGastos.Size = new Size(409, 325);
             tabGastos.TabIndex = 1;
             tabGastos.Text = "Gastos";
             tabGastos.UseVisualStyleBackColor = true;
-            // 
-            // lblFechaIngresos
-            // 
-            lblFechaIngresos.AutoSize = true;
-            lblFechaIngresos.Location = new Point(15, 34);
-            lblFechaIngresos.Name = "lblFechaIngresos";
-            lblFechaIngresos.Size = new Size(38, 15);
-            lblFechaIngresos.TabIndex = 0;
-            lblFechaIngresos.Text = "Fecha";
-            // 
-            // lblMontoIngresos
-            // 
-            lblMontoIngresos.AutoSize = true;
-            lblMontoIngresos.Location = new Point(15, 84);
-            lblMontoIngresos.Name = "lblMontoIngresos";
-            lblMontoIngresos.Size = new Size(43, 15);
-            lblMontoIngresos.TabIndex = 1;
-            lblMontoIngresos.Text = "Monto";
-            // 
-            // lblCategoriaIngresos
-            // 
-            lblCategoriaIngresos.AutoSize = true;
-            lblCategoriaIngresos.Location = new Point(15, 124);
-            lblCategoriaIngresos.Name = "lblCategoriaIngresos";
-            lblCategoriaIngresos.Size = new Size(58, 15);
-            lblCategoriaIngresos.TabIndex = 2;
-            lblCategoriaIngresos.Text = "Categoría";
-            // 
-            // lblCuentaIngresos
-            // 
-            lblCuentaIngresos.AutoSize = true;
-            lblCuentaIngresos.Location = new Point(15, 167);
-            lblCuentaIngresos.Name = "lblCuentaIngresos";
-            lblCuentaIngresos.Size = new Size(45, 15);
-            lblCuentaIngresos.TabIndex = 3;
-            lblCuentaIngresos.Text = "Cuenta";
-            // 
-            // lblNotaIngresos
-            // 
-            lblNotaIngresos.AutoSize = true;
-            lblNotaIngresos.Location = new Point(15, 215);
-            lblNotaIngresos.Name = "lblNotaIngresos";
-            lblNotaIngresos.Size = new Size(33, 15);
-            lblNotaIngresos.TabIndex = 4;
-            lblNotaIngresos.Text = "Nota";
-            // 
-            // txtFecha
-            // 
-            txtFecha.Location = new Point(91, 34);
-            txtFecha.Name = "txtFecha";
-            txtFecha.Size = new Size(100, 23);
-            txtFecha.TabIndex = 5;
-            // 
-            // txtMonto
-            // 
-            txtMonto.Location = new Point(91, 81);
-            txtMonto.Name = "txtMonto";
-            txtMonto.Size = new Size(100, 23);
-            txtMonto.TabIndex = 6;
-            // 
-            // txtCategoria
-            // 
-            txtCategoria.Location = new Point(91, 124);
-            txtCategoria.Name = "txtCategoria";
-            txtCategoria.Size = new Size(100, 23);
-            txtCategoria.TabIndex = 7;
-            // 
-            // txtCuenta
-            // 
-            txtCuenta.Location = new Point(91, 167);
-            txtCuenta.Name = "txtCuenta";
-            txtCuenta.Size = new Size(100, 23);
-            txtCuenta.TabIndex = 8;
-            // 
-            // txtNota
-            // 
-            txtNota.Location = new Point(91, 215);
-            txtNota.Name = "txtNota";
-            txtNota.Size = new Size(100, 23);
-            txtNota.TabIndex = 9;
             // 
             // textBox1
             // 
@@ -266,11 +272,41 @@
             lblFechaGastos.TabIndex = 10;
             lblFechaGastos.Text = "Fecha";
             // 
+            // btnGuardar
+            // 
+            btnGuardar.Location = new Point(116, 278);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(75, 37);
+            btnGuardar.TabIndex = 10;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnContinuar
+            // 
+            btnContinuar.Location = new Point(245, 278);
+            btnContinuar.Name = "btnContinuar";
+            btnContinuar.Size = new Size(75, 37);
+            btnContinuar.TabIndex = 11;
+            btnContinuar.Text = "Continuar";
+            btnContinuar.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.Font = new Font("Segoe UI", 20F);
+            btnSalir.Location = new Point(10, 278);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(43, 37);
+            btnSalir.TabIndex = 12;
+            btnSalir.Text = "←";
+            btnSalir.TextAlign = ContentAlignment.TopCenter;
+            btnSalir.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(451, 530);
+            ClientSize = new Size(441, 398);
             Controls.Add(tabControl1);
             Name = "Form2";
             Text = "Form2";
@@ -307,5 +343,8 @@
         private Label lblCategoriaGastos;
         private Label lblMontoGastos;
         private Label lblFechaGastos;
+        private Button btnSalir;
+        private Button btnContinuar;
+        private Button btnGuardar;
     }
 }

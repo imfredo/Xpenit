@@ -30,14 +30,11 @@
         {
             tabControl1 = new TabControl();
             tab1 = new TabPage();
+            lblTotal1 = new Label();
+            lblGasto1 = new Label();
+            lblIngreso1 = new Label();
             btnAgregar = new Button();
             dataGridView1 = new DataGridView();
-            Iingreso1 = new DataGridViewTextBoxColumn();
-            Movimiento1 = new DataGridViewTextBoxColumn();
-            Categoria = new DataGridViewTextBoxColumn();
-            Monto = new DataGridViewTextBoxColumn();
-            Fecha = new DataGridViewTextBoxColumn();
-            Nota = new DataGridViewTextBoxColumn();
             lblTotal = new Label();
             lblGasto = new Label();
             lblIngreso = new Label();
@@ -45,9 +42,12 @@
             tabPage1 = new TabPage();
             tabPage3 = new TabPage();
             dateTimePicker1 = new DateTimePicker();
-            lblIngreso1 = new Label();
-            lblGasto1 = new Label();
-            lblTotal1 = new Label();
+            Iingreso1 = new DataGridViewTextBoxColumn();
+            Movimiento1 = new DataGridViewTextBoxColumn();
+            Categoria = new DataGridViewTextBoxColumn();
+            Monto = new DataGridViewTextBoxColumn();
+            Fecha = new DataGridViewTextBoxColumn();
+            Nota = new DataGridViewTextBoxColumn();
             tabControl1.SuspendLayout();
             tab1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -84,6 +84,33 @@
             tab1.Text = "Diario";
             tab1.UseVisualStyleBackColor = true;
             // 
+            // lblTotal1
+            // 
+            lblTotal1.AutoSize = true;
+            lblTotal1.Location = new Point(629, 37);
+            lblTotal1.Name = "lblTotal1";
+            lblTotal1.Size = new Size(38, 15);
+            lblTotal1.TabIndex = 7;
+            lblTotal1.Text = "label6";
+            // 
+            // lblGasto1
+            // 
+            lblGasto1.AutoSize = true;
+            lblGasto1.Location = new Point(251, 42);
+            lblGasto1.Name = "lblGasto1";
+            lblGasto1.Size = new Size(38, 15);
+            lblGasto1.TabIndex = 6;
+            lblGasto1.Text = "label5";
+            // 
+            // lblIngreso1
+            // 
+            lblIngreso1.AutoSize = true;
+            lblIngreso1.Location = new Point(26, 42);
+            lblIngreso1.Name = "lblIngreso1";
+            lblIngreso1.Size = new Size(38, 15);
+            lblIngreso1.TabIndex = 5;
+            lblIngreso1.Text = "label4";
+            // 
             // btnAgregar
             // 
             btnAgregar.Location = new Point(629, 282);
@@ -102,42 +129,6 @@
             dataGridView1.Size = new Size(571, 154);
             dataGridView1.TabIndex = 3;
             dataGridView1.Visible = false;
-            // 
-            // Iingreso1
-            // 
-            Iingreso1.HeaderText = "Ingreso";
-            Iingreso1.Name = "Iingreso1";
-            Iingreso1.Visible = false;
-            // 
-            // Movimiento1
-            // 
-            Movimiento1.HeaderText = "$";
-            Movimiento1.Name = "Movimiento1";
-            Movimiento1.Visible = false;
-            // 
-            // Categoria
-            // 
-            Categoria.HeaderText = "Categoria";
-            Categoria.Name = "Categoria";
-            Categoria.Visible = false;
-            // 
-            // Monto
-            // 
-            Monto.HeaderText = "Monto";
-            Monto.Name = "Monto";
-            Monto.Visible = false;
-            // 
-            // Fecha
-            // 
-            Fecha.HeaderText = "Fecha";
-            Fecha.Name = "Fecha";
-            Fecha.Visible = false;
-            // 
-            // Nota
-            // 
-            Nota.HeaderText = "Nota";
-            Nota.Name = "Nota";
-            Nota.Visible = false;
             // 
             // lblTotal
             // 
@@ -171,7 +162,7 @@
             tabPage2.Location = new Point(4, 34);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1119, 498);
+            tabPage2.Size = new Size(685, 359);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Semanal";
             tabPage2.UseVisualStyleBackColor = true;
@@ -181,7 +172,7 @@
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1119, 498);
+            tabPage1.Size = new Size(685, 359);
             tabPage1.TabIndex = 2;
             tabPage1.Text = "Mensual";
             tabPage1.UseVisualStyleBackColor = true;
@@ -191,7 +182,7 @@
             tabPage3.Location = new Point(4, 34);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1119, 498);
+            tabPage3.Size = new Size(685, 359);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "Calendario";
             tabPage3.UseVisualStyleBackColor = true;
@@ -203,32 +194,40 @@
             dateTimePicker1.Size = new Size(277, 23);
             dateTimePicker1.TabIndex = 1;
             // 
-            // lblIngreso1
+            // Iingreso1
             // 
-            lblIngreso1.AutoSize = true;
-            lblIngreso1.Location = new Point(26, 42);
-            lblIngreso1.Name = "lblIngreso1";
-            lblIngreso1.Size = new Size(38, 15);
-            lblIngreso1.TabIndex = 5;
-            lblIngreso1.Text = "label4";
+            Iingreso1.HeaderText = "Ingreso";
+            Iingreso1.Name = "Iingreso1";
             // 
-            // lblGasto1
+            // Movimiento1
             // 
-            lblGasto1.AutoSize = true;
-            lblGasto1.Location = new Point(251, 42);
-            lblGasto1.Name = "lblGasto1";
-            lblGasto1.Size = new Size(38, 15);
-            lblGasto1.TabIndex = 6;
-            lblGasto1.Text = "label5";
+            Movimiento1.HeaderText = "$";
+            Movimiento1.Name = "Movimiento1";
+            Movimiento1.Visible = false;
             // 
-            // lblTotal1
+            // Categoria
             // 
-            lblTotal1.AutoSize = true;
-            lblTotal1.Location = new Point(629, 37);
-            lblTotal1.Name = "lblTotal1";
-            lblTotal1.Size = new Size(38, 15);
-            lblTotal1.TabIndex = 7;
-            lblTotal1.Text = "label6";
+            Categoria.HeaderText = "Categoria";
+            Categoria.Name = "Categoria";
+            Categoria.Visible = false;
+            // 
+            // Monto
+            // 
+            Monto.HeaderText = "Monto";
+            Monto.Name = "Monto";
+            Monto.Visible = false;
+            // 
+            // Fecha
+            // 
+            Fecha.HeaderText = "Fecha";
+            Fecha.Name = "Fecha";
+            Fecha.Visible = false;
+            // 
+            // Nota
+            // 
+            Nota.HeaderText = "Nota";
+            Nota.Name = "Nota";
+            Nota.Visible = false;
             // 
             // Form1
             // 
@@ -259,14 +258,14 @@
         private DateTimePicker dateTimePicker1;
         private DataGridView dataGridView1;
         private Button btnAgregar;
+        private Label lblTotal1;
+        private Label lblGasto1;
+        private Label lblIngreso1;
         private DataGridViewTextBoxColumn Iingreso1;
         private DataGridViewTextBoxColumn Movimiento1;
         private DataGridViewTextBoxColumn Categoria;
         private DataGridViewTextBoxColumn Monto;
         private DataGridViewTextBoxColumn Fecha;
         private DataGridViewTextBoxColumn Nota;
-        private Label lblTotal1;
-        private Label lblGasto1;
-        private Label lblIngreso1;
     }
 }
