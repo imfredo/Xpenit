@@ -30,6 +30,9 @@
         {
             tabControl1 = new TabControl();
             tabIngresos = new TabPage();
+            btnSalirIngresos = new Button();
+            btnContinuar = new Button();
+            btnGuardar = new Button();
             txtNota = new TextBox();
             txtCuenta = new TextBox();
             txtCategoria = new TextBox();
@@ -41,6 +44,9 @@
             lblMontoIngresos = new Label();
             lblFechaIngresos = new Label();
             tabGastos = new TabPage();
+            btnGastos = new Button();
+            btnContinuarGastos = new Button();
+            btnGuardarGastos = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -51,9 +57,6 @@
             lblCategoriaGastos = new Label();
             lblMontoGastos = new Label();
             lblFechaGastos = new Label();
-            btnGuardar = new Button();
-            btnContinuar = new Button();
-            btnSalir = new Button();
             tabControl1.SuspendLayout();
             tabIngresos.SuspendLayout();
             tabGastos.SuspendLayout();
@@ -71,7 +74,7 @@
             // 
             // tabIngresos
             // 
-            tabIngresos.Controls.Add(btnSalir);
+            tabIngresos.Controls.Add(btnSalirIngresos);
             tabIngresos.Controls.Add(btnContinuar);
             tabIngresos.Controls.Add(btnGuardar);
             tabIngresos.Controls.Add(txtNota);
@@ -91,6 +94,36 @@
             tabIngresos.TabIndex = 0;
             tabIngresos.Text = "Ingresos";
             tabIngresos.UseVisualStyleBackColor = true;
+            // 
+            // btnSalirIngresos
+            // 
+            btnSalirIngresos.FlatAppearance.BorderSize = 0;
+            btnSalirIngresos.Font = new Font("Segoe UI", 20F);
+            btnSalirIngresos.Location = new Point(10, 278);
+            btnSalirIngresos.Name = "btnSalirIngresos";
+            btnSalirIngresos.Size = new Size(43, 37);
+            btnSalirIngresos.TabIndex = 12;
+            btnSalirIngresos.Text = "←";
+            btnSalirIngresos.TextAlign = ContentAlignment.TopCenter;
+            btnSalirIngresos.UseVisualStyleBackColor = true;
+            // 
+            // btnContinuar
+            // 
+            btnContinuar.Location = new Point(245, 278);
+            btnContinuar.Name = "btnContinuar";
+            btnContinuar.Size = new Size(75, 37);
+            btnContinuar.TabIndex = 11;
+            btnContinuar.Text = "Continuar";
+            btnContinuar.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Location = new Point(116, 278);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(75, 37);
+            btnGuardar.TabIndex = 10;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
             // 
             // txtNota
             // 
@@ -174,6 +207,9 @@
             // 
             // tabGastos
             // 
+            tabGastos.Controls.Add(btnGastos);
+            tabGastos.Controls.Add(btnContinuarGastos);
+            tabGastos.Controls.Add(btnGuardarGastos);
             tabGastos.Controls.Add(textBox1);
             tabGastos.Controls.Add(textBox2);
             tabGastos.Controls.Add(textBox3);
@@ -192,16 +228,46 @@
             tabGastos.Text = "Gastos";
             tabGastos.UseVisualStyleBackColor = true;
             // 
+            // btnGastos
+            // 
+            btnGastos.FlatAppearance.BorderSize = 0;
+            btnGastos.Font = new Font("Segoe UI", 20F);
+            btnGastos.Location = new Point(15, 282);
+            btnGastos.Name = "btnGastos";
+            btnGastos.Size = new Size(43, 37);
+            btnGastos.TabIndex = 22;
+            btnGastos.Text = "←";
+            btnGastos.TextAlign = ContentAlignment.TopCenter;
+            btnGastos.UseVisualStyleBackColor = true;
+            // 
+            // btnContinuarGastos
+            // 
+            btnContinuarGastos.Location = new Point(250, 282);
+            btnContinuarGastos.Name = "btnContinuarGastos";
+            btnContinuarGastos.Size = new Size(75, 37);
+            btnContinuarGastos.TabIndex = 21;
+            btnContinuarGastos.Text = "Continuar";
+            btnContinuarGastos.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardarGastos
+            // 
+            btnGuardarGastos.Location = new Point(121, 282);
+            btnGuardarGastos.Name = "btnGuardarGastos";
+            btnGuardarGastos.Size = new Size(75, 37);
+            btnGuardarGastos.TabIndex = 20;
+            btnGuardarGastos.Text = "Guardar";
+            btnGuardarGastos.UseVisualStyleBackColor = true;
+            // 
             // textBox1
             // 
-            textBox1.Location = new Point(73, 203);
+            textBox1.Location = new Point(110, 198);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 19;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(85, 158);
+            textBox2.Location = new Point(110, 158);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 18;
@@ -215,14 +281,14 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(85, 72);
+            textBox4.Location = new Point(110, 72);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 23);
             textBox4.TabIndex = 16;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(85, 25);
+            textBox5.Location = new Point(110, 25);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(100, 23);
             textBox5.TabIndex = 15;
@@ -239,7 +305,7 @@
             // lblCuentaGastos
             // 
             lblCuentaGastos.AutoSize = true;
-            lblCuentaGastos.Location = new Point(34, 158);
+            lblCuentaGastos.Location = new Point(15, 167);
             lblCuentaGastos.Name = "lblCuentaGastos";
             lblCuentaGastos.Size = new Size(45, 15);
             lblCuentaGastos.TabIndex = 13;
@@ -248,7 +314,7 @@
             // lblCategoriaGastos
             // 
             lblCategoriaGastos.AutoSize = true;
-            lblCategoriaGastos.Location = new Point(34, 115);
+            lblCategoriaGastos.Location = new Point(15, 124);
             lblCategoriaGastos.Name = "lblCategoriaGastos";
             lblCategoriaGastos.Size = new Size(58, 15);
             lblCategoriaGastos.TabIndex = 12;
@@ -257,7 +323,7 @@
             // lblMontoGastos
             // 
             lblMontoGastos.AutoSize = true;
-            lblMontoGastos.Location = new Point(34, 75);
+            lblMontoGastos.Location = new Point(15, 84);
             lblMontoGastos.Name = "lblMontoGastos";
             lblMontoGastos.Size = new Size(43, 15);
             lblMontoGastos.TabIndex = 11;
@@ -266,41 +332,11 @@
             // lblFechaGastos
             // 
             lblFechaGastos.AutoSize = true;
-            lblFechaGastos.Location = new Point(34, 25);
+            lblFechaGastos.Location = new Point(15, 34);
             lblFechaGastos.Name = "lblFechaGastos";
             lblFechaGastos.Size = new Size(38, 15);
             lblFechaGastos.TabIndex = 10;
             lblFechaGastos.Text = "Fecha";
-            // 
-            // btnGuardar
-            // 
-            btnGuardar.Location = new Point(116, 278);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(75, 37);
-            btnGuardar.TabIndex = 10;
-            btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // btnContinuar
-            // 
-            btnContinuar.Location = new Point(245, 278);
-            btnContinuar.Name = "btnContinuar";
-            btnContinuar.Size = new Size(75, 37);
-            btnContinuar.TabIndex = 11;
-            btnContinuar.Text = "Continuar";
-            btnContinuar.UseVisualStyleBackColor = true;
-            // 
-            // btnSalir
-            // 
-            btnSalir.FlatAppearance.BorderSize = 0;
-            btnSalir.Font = new Font("Segoe UI", 20F);
-            btnSalir.Location = new Point(10, 278);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(43, 37);
-            btnSalir.TabIndex = 12;
-            btnSalir.Text = "←";
-            btnSalir.TextAlign = ContentAlignment.TopCenter;
-            btnSalir.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -343,8 +379,11 @@
         private Label lblCategoriaGastos;
         private Label lblMontoGastos;
         private Label lblFechaGastos;
-        private Button btnSalir;
+        private Button btnSalirIngresos;
         private Button btnContinuar;
         private Button btnGuardar;
+        private Button btnGastos;
+        private Button btnContinuarGastos;
+        private Button btnGuardarGastos;
     }
 }
