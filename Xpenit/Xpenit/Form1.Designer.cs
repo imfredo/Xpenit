@@ -124,9 +124,9 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Iingreso1, Movimiento1, Categoria, Monto, Fecha, Nota });
-            dataGridView1.Location = new Point(26, 159);
+            dataGridView1.Location = new Point(22, 159);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(571, 154);
+            dataGridView1.Size = new Size(597, 154);
             dataGridView1.TabIndex = 3;
             dataGridView1.Visible = false;
             // 
@@ -203,31 +203,26 @@
             // 
             Movimiento1.HeaderText = "$";
             Movimiento1.Name = "Movimiento1";
-            Movimiento1.Visible = false;
             // 
             // Categoria
             // 
             Categoria.HeaderText = "Categoria";
             Categoria.Name = "Categoria";
-            Categoria.Visible = false;
             // 
             // Monto
             // 
             Monto.HeaderText = "Monto";
             Monto.Name = "Monto";
-            Monto.Visible = false;
             // 
             // Fecha
             // 
             Fecha.HeaderText = "Fecha";
             Fecha.Name = "Fecha";
-            Fecha.Visible = false;
             // 
             // Nota
             // 
             Nota.HeaderText = "Nota";
             Nota.Name = "Nota";
-            Nota.Visible = false;
             // 
             // Form1
             // 
