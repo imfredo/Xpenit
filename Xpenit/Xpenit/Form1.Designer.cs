@@ -34,13 +34,6 @@
             lblGasto1 = new Label();
             lblIngreso1 = new Label();
             btnAgregar = new Button();
-            dataGridView1 = new DataGridView();
-            Iingreso1 = new DataGridViewTextBoxColumn();
-            Movimiento1 = new DataGridViewTextBoxColumn();
-            Categoria = new DataGridViewTextBoxColumn();
-            Monto = new DataGridViewTextBoxColumn();
-            Fecha = new DataGridViewTextBoxColumn();
-            Nota = new DataGridViewTextBoxColumn();
             lblTotal = new Label();
             lblGasto = new Label();
             lblIngreso = new Label();
@@ -48,6 +41,7 @@
             tabPage1 = new TabPage();
             tabPage3 = new TabPage();
             dateTimePicker1 = new DateTimePicker();
+            dataGridView1 = new DataGridView();
             tabControl1.SuspendLayout();
             tab1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -68,17 +62,17 @@
             // 
             // tab1
             // 
+            tab1.Controls.Add(dataGridView1);
             tab1.Controls.Add(lblTotal1);
             tab1.Controls.Add(lblGasto1);
             tab1.Controls.Add(lblIngreso1);
             tab1.Controls.Add(btnAgregar);
-            tab1.Controls.Add(dataGridView1);
             tab1.Controls.Add(lblTotal);
             tab1.Controls.Add(lblGasto);
             tab1.Controls.Add(lblIngreso);
             tab1.Location = new Point(4, 34);
             tab1.Name = "tab1";
-            tab1.Padding = new Padding(3, 3, 3, 3);
+            tab1.Padding = new Padding(3);
             tab1.Size = new Size(685, 359);
             tab1.TabIndex = 0;
             tab1.Text = "Diario";
@@ -119,59 +113,7 @@
             btnAgregar.TabIndex = 4;
             btnAgregar.Text = "+";
             btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Iingreso1, Movimiento1, Categoria, Monto, Fecha, Nota });
-            dataGridView1.Location = new Point(22, 159);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(597, 154);
-            dataGridView1.TabIndex = 3;
-            dataGridView1.Visible = false;
-            // 
-            // Iingreso1
-            // 
-            Iingreso1.HeaderText = "Ingreso";
-            Iingreso1.MinimumWidth = 10;
-            Iingreso1.Name = "Iingreso1";
-            Iingreso1.Width = 200;
-            // 
-            // Movimiento1
-            // 
-            Movimiento1.HeaderText = "$";
-            Movimiento1.MinimumWidth = 10;
-            Movimiento1.Name = "Movimiento1";
-            Movimiento1.Width = 200;
-            // 
-            // Categoria
-            // 
-            Categoria.HeaderText = "Categoria";
-            Categoria.MinimumWidth = 10;
-            Categoria.Name = "Categoria";
-            Categoria.Width = 200;
-            // 
-            // Monto
-            // 
-            Monto.HeaderText = "Monto";
-            Monto.MinimumWidth = 10;
-            Monto.Name = "Monto";
-            Monto.Width = 200;
-            // 
-            // Fecha
-            // 
-            Fecha.HeaderText = "Fecha";
-            Fecha.MinimumWidth = 10;
-            Fecha.Name = "Fecha";
-            Fecha.Width = 200;
-            // 
-            // Nota
-            // 
-            Nota.HeaderText = "Nota";
-            Nota.MinimumWidth = 10;
-            Nota.Name = "Nota";
-            Nota.Width = 200;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // lblTotal
             // 
@@ -204,7 +146,7 @@
             // 
             tabPage2.Location = new Point(4, 34);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(685, 359);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Semanal";
@@ -214,7 +156,7 @@
             // 
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(685, 359);
             tabPage1.TabIndex = 2;
             tabPage1.Text = "Mensual";
@@ -224,7 +166,7 @@
             // 
             tabPage3.Location = new Point(4, 34);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 3, 3, 3);
+            tabPage3.Padding = new Padding(3);
             tabPage3.Size = new Size(685, 359);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "Calendario";
@@ -237,6 +179,14 @@
             dateTimePicker1.Size = new Size(277, 23);
             dateTimePicker1.TabIndex = 1;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(75, 151);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(499, 150);
+            dataGridView1.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -246,6 +196,7 @@
             Controls.Add(tabControl1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             tabControl1.ResumeLayout(false);
             tab1.ResumeLayout(false);
             tab1.PerformLayout();
@@ -264,16 +215,10 @@
         private Label lblGasto;
         private Label lblIngreso;
         private DateTimePicker dateTimePicker1;
-        private DataGridView dataGridView1;
         private Button btnAgregar;
         private Label lblTotal1;
         private Label lblGasto1;
         private Label lblIngreso1;
-        private DataGridViewTextBoxColumn Iingreso1;
-        private DataGridViewTextBoxColumn Movimiento1;
-        private DataGridViewTextBoxColumn Categoria;
-        private DataGridViewTextBoxColumn Monto;
-        private DataGridViewTextBoxColumn Fecha;
-        private DataGridViewTextBoxColumn Nota;
+        private DataGridView dataGridView1;
     }
 }
