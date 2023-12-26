@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Proyectos C#\\Xpenit\\Xpenit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|c:\\proyectos c#\\xpenit\\xpenit\\xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|solutionrelative:xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|c:\\proyectos c#\\xpenit\\xpenit\\xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|solutionrelative:xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|c:\\proyectos c#\\xpenit\\xpenit\\xpenit\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|solutionrelative:xpenit\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|c:\\proyectos c#\\xpenit\\xpenit\\xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|solutionrelative:xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|c:\\proyectos c#\\xpenit\\xpenit\\xpenit\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|solutionrelative:xpenit\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|c:\\proyectos c#\\xpenit\\xpenit\\xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{737ED2A4-0CEA-4C12-A169-85AD6C70D2B2}|Xpenit\\Xpenit.csproj|solutionrelative:xpenit\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Form2.cs",
               "RelativeDocumentMoniker": "Xpenit\\Form2.cs",
               "ToolTip": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Form2.cs",
               "RelativeToolTip": "Xpenit\\Form2.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADcAAAAyAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAqwD8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-25T01:27:43.88Z",
               "EditorCaption": ""
@@ -49,14 +49,14 @@
               "RelativeDocumentMoniker": "Xpenit\\Form1.cs",
               "ToolTip": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Form1.cs",
               "RelativeToolTip": "Xpenit\\Form1.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAADAAAAAxAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswDAAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-23T02:40:03.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Form1.cs",
               "RelativeDocumentMoniker": "Xpenit\\Form1.cs",
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Form2.cs",
               "RelativeDocumentMoniker": "Xpenit\\Form2.cs",
