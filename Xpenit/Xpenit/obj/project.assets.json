@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Freddy Guerrero\\.nuget\\packages\\": {}
+    "C:\\Users\\xavie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Xpenit.csproj",
+      "projectUniqueName": "C:\\Users\\xavie\\Desktop\\Programacion\\Xpenit\\Xpenit\\Xpenit\\Xpenit.csproj",
       "projectName": "Xpenit",
-      "projectPath": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\Xpenit.csproj",
-      "packagesPath": "C:\\Users\\Freddy Guerrero\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyectos C#\\Xpenit\\Xpenit\\Xpenit\\obj\\",
+      "projectPath": "C:\\Users\\xavie\\Desktop\\Programacion\\Xpenit\\Xpenit\\Xpenit\\Xpenit.csproj",
+      "packagesPath": "C:\\Users\\xavie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xavie\\Desktop\\Programacion\\Xpenit\\Xpenit\\Xpenit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Freddy Guerrero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xavie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -41,11 +40,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
