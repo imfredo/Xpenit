@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnGuardar1 = new TabControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            tabControl2 = new TabControl();
             tabIngresos = new TabPage();
             txtMonto = new TextBox();
             btnSalirIngresos = new Button();
@@ -57,20 +58,20 @@
             lblCategoriaGastos = new Label();
             lblMontoGastos = new Label();
             lblFechaGastos = new Label();
-            btnGuardar1.SuspendLayout();
+            tabControl2.SuspendLayout();
             tabIngresos.SuspendLayout();
             tabGastos.SuspendLayout();
             SuspendLayout();
             // 
-            // btnGuardar1
+            // tabControl2
             // 
-            btnGuardar1.Controls.Add(tabIngresos);
-            btnGuardar1.Controls.Add(tabGastos);
-            btnGuardar1.Location = new Point(12, 12);
-            btnGuardar1.Name = "btnGuardar1";
-            btnGuardar1.SelectedIndex = 0;
-            btnGuardar1.Size = new Size(343, 351);
-            btnGuardar1.TabIndex = 0;
+            tabControl2.Controls.Add(tabIngresos);
+            tabControl2.Controls.Add(tabGastos);
+            tabControl2.Location = new Point(12, 12);
+            tabControl2.Name = "tabControl2";
+            tabControl2.SelectedIndex = 0;
+            tabControl2.Size = new Size(343, 351);
+            tabControl2.TabIndex = 0;
             // 
             // tabIngresos
             // 
@@ -161,6 +162,7 @@
             txtFecha.Name = "txtFecha";
             txtFecha.Size = new Size(100, 23);
             txtFecha.TabIndex = 5;
+            txtFecha.KeyPress += txtFecha_KeyPress;
             // 
             // lblNotaIngresos
             // 
@@ -346,10 +348,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(367, 375);
-            Controls.Add(btnGuardar1);
+            Controls.Add(tabControl2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form2";
             Text = "Form2";
-            btnGuardar1.ResumeLayout(false);
+            tabControl2.ResumeLayout(false);
             tabIngresos.ResumeLayout(false);
             tabIngresos.PerformLayout();
             tabGastos.ResumeLayout(false);
@@ -359,7 +362,7 @@
 
         #endregion
 
-        private TabControl btnGuardar1;
+        private TabControl tabControl2;
         private TabPage tabIngresos;
         private Label lblNotaIngresos;
         private Label lblCuentaIngresos;

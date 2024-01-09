@@ -46,7 +46,7 @@ namespace Xpenit
 
         public void AgregarFilaDataGridView(string Fecha, string Monto, string Categoria, string Cuenta, string Nota)
         {
-            dataGridView1.Rows.Add(Fecha, Monto, Categoria, Cuenta, Nota);
+             dataGridView1.Rows.Add(Fecha, Monto, Categoria, Cuenta, Nota);
         }
     }
 

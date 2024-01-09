@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabControl1 = new TabControl();
             tab1 = new TabPage();
+            dataGridView1 = new DataGridView();
             lblTotal1 = new Label();
             lblGasto1 = new Label();
             lblIngreso1 = new Label();
@@ -41,7 +43,6 @@
             tabPage1 = new TabPage();
             tabPage3 = new TabPage();
             dateTimePicker1 = new DateTimePicker();
-            dataGridView1 = new DataGridView();
             tabControl1.SuspendLayout();
             tab1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -77,6 +78,14 @@
             tab1.TabIndex = 0;
             tab1.Text = "Diario";
             tab1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(75, 151);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(499, 150);
+            dataGridView1.TabIndex = 8;
             // 
             // lblTotal1
             // 
@@ -179,14 +188,6 @@
             dateTimePicker1.Size = new Size(277, 23);
             dateTimePicker1.TabIndex = 1;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(75, 151);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(499, 150);
-            dataGridView1.TabIndex = 8;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -194,6 +195,7 @@
             ClientSize = new Size(716, 457);
             Controls.Add(dateTimePicker1);
             Controls.Add(tabControl1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

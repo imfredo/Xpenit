@@ -29,10 +29,8 @@ namespace Xpenit
             string Categoria = txtCategoria.Text;
             string Cuenta = txtCuenta.Text;
             string Nota = txtNota.Text;
-            
+
             ventana1.AgregarFilaDataGridView(Fecha, Monto, Categoria, Cuenta, Nota);
-
-
             this.Close();//Esto va a cerrar el Form2 despues de guardar todos los datos
             
         }
@@ -48,6 +46,21 @@ namespace Xpenit
             
         }
 
+        private void txtFecha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            /*Este evento lo que hará es permitir que solo puedas digitar solo números (0-9),
+            teclas de control (como borrar)*/
+
+            char keyPressed = e.KeyChar;
+
+            if(!char.IsControl(keyPressed) && !char.IsDigit(keyPressed) && keyPressed != '/' && keyPressed != '-')
+            {
+                e.Handled = true; // este Handled detiene la entrada de caracteres no permitidos
+            }
+
+        }
+
+
         private void btnGuardarGastos_Click(object sender, EventArgs e)
         {
             string Fecha = txtFecha1.Text;
@@ -57,8 +70,6 @@ namespace Xpenit
             string Cuenta = txtCuenta1.Text;
             string Nota = txtNota1.Text;
 
-            ventana1.AgregarFilaDataGridView(Fecha, Monto, Categoria, Cuenta, Nota);
-            
         }
     }
 }

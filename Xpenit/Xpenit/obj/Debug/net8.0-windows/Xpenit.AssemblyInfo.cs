@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Xpenit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8084ef34daffd034e804d03635c7c623f07cca6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Xpenit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Xpenit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
